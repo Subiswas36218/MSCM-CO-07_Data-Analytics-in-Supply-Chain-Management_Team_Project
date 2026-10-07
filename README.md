@@ -653,7 +653,7 @@ Repository
 Once this repository has been pushed to GitHub, GitHub can generate the exact status-badge Markdown for the workflow. The repository-specific form is:
 
 ```markdown
-[![Execute DASCM 2026 Notebooks](https://github.com/OWNER/REPOSITORY/actions/workflows/notebooks.yml/badge.svg)](https://github.com/OWNER/REPOSITORY/actions/workflows/notebooks.yml)
+[![Execute DASCM 2026 Notebooks](https://github.com/Subiswas36218/MSCM-CO-07_Data-Analytics-in-Supply-Chain-Management_Team_Project/actions/workflows/notebooks.yml/badge.svg)](https://github.com/Subiswas36218/MSCM-CO-07_Data-Analytics-in-Supply-Chain-Management_Team_Project/actions/workflows/notebooks.yml)
 ```
 
 Replace `OWNER/REPOSITORY` with the actual GitHub repository path. Do **not** leave the placeholder in the final public README.
