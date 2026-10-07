@@ -1,0 +1,96 @@
+# ============================================================
+# DASCM 2026 — Git Ignore
+# ============================================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.conda/
+conda-env/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.whl
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+executed_notebooks/
+
+# ---------- IDEs / Editors ----------
+.vscode/
+.idea/
+*.iml
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ---------- macOS ----------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ---------- Windows ----------
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ---------- Logs / Temporary files ----------
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---------- Data / Generated artifacts ----------
+# The four supplied CSV datasets are intentionally NOT ignored.
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.joblib
+*.sqlite
+*.sqlite3
+*.db
+
+# ---------- Environment / Secrets ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+
+# ---------- Archives ----------
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+
+# ---------- Jupyter configuration ----------
+jupyter_nbconvert_config.py
+jupyter_notebook_config.py
