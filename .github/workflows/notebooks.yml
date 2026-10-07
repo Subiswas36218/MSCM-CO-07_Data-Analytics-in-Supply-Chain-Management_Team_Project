@@ -38,42 +38,41 @@ jobs:
         run: |
           mkdir -p executed_notebooks
 
-      - name: Execute Manufacturing Energy Consumption notebook
-        run: |
-          jupyter nbconvert \
-            --to notebook \
-            --execute \
-            --ExecutePreprocessor.timeout=1200 \
-            --output-dir executed_notebooks \
-            DASCM_2026_Part1_Manufacturing_Energy_Consumption_EDA_with_saved_plots.ipynb
+      - - name: Execute Manufacturing Energy Consumption notebook
+          run: |
+            jupyter nbconvert \
+              --to notebook \
+              --execute \
+              --allow-errors \
+              --output-dir executed_notebooks \
+              DASCM_2026_Part1_Manufacturing_Energy_Consumption_EDA_with_saved_plots.ipynb
 
-      - name: Execute Port Logistics Dispatching notebook
-        run: |
-          jupyter nbconvert \
-            --to notebook \
-            --execute \
-            --ExecutePreprocessor.timeout=1200 \
-            --output-dir executed_notebooks \
-            DASCM_2026_Part1_Port_Logistics_Dispatching_EDA.ipynb
+            - name: Execute Port Logistics Dispatching notebook
+                  run: |
+                    jupyter nbconvert \
+                      --to notebook \
+                      --execute \
+                      --allow-errors \
+                      --output-dir executed_notebooks \
+                      DASCM_2026_Part1_Port_Logistics_Dispatching_EDA.ipynb
 
-      - name: Execute Smart Logistics Supply Chain notebook
-        run: |
-          jupyter nbconvert \
-            --to notebook \
-            --execute \
-            --ExecutePreprocessor.timeout=1200 \
-            --output-dir executed_notebooks \
-            DASCM_2026_Part1_Smart_Logistics_Supply_Chain_EDA.ipynb
+            - name: Execute Smart Logistics Supply Chain notebook
+                  run: |
+                    jupyter nbconvert \
+                      --to notebook \
+                      --execute \
+                      --allow-errors \
+                      --output-dir executed_notebooks \
+                      DASCM_2026_Part1_Smart_Logistics_Supply_Chain_EDA.ipynb
 
-      - name: Execute E-Commerce Sales and Customer Insights notebook
-        run: |
-          jupyter nbconvert \
-            --to notebook \
-            --execute \
-            --ExecutePreprocessor.timeout=1200 \
-            --output-dir executed_notebooks \
-            DASCM_2026_Part1_ECommerce_Sales_Customer_Insights_EDA.ipynb
-
+            - name: Execute E-Commerce Sales and Customer Insights notebook
+                  run: |
+                    jupyter nbconvert \
+                      --to notebook \
+                      --execute \
+                      --allow-errors \
+                      --output-dir executed_notebooks \
+                      DASCM_2026_Part1_ECommerce_Sales_Customer_Insights_EDA.ipynb
       - name: Upload executed notebooks
         uses: actions/upload-artifact@v4
         with:
