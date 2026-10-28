@@ -38,8 +38,7 @@ This repository contains four Jupyter Notebook projects prepared around the supp
 
 1. **Manufacturing Energy Consumption — Regression**
 2. **Port Logistics Dispatching — Classification**
-3. **Smart Logistics Supply Chain — EDA / Logistics Delay Analysis**
-4. **E-Commerce Sales & Customer Insights — EDA / Shipping Fee Analysis**
+3. **E-Commerce Sales & Customer Insights — EDA / Shipping Fee Analysis**
 
 The notebooks follow a common EDA structure:
 
