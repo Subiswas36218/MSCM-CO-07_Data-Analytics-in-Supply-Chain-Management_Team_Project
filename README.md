@@ -62,8 +62,8 @@ Two Manufacturing notebook versions were created during development. The reposit
 
 | # | Notebook | Analytical task | Dataset file |
 |---|---|---|---|
-| 1 | `DASCM_2026_Part1_Manufacturing_Energy_Consumption_EDA.ipynb` | Manufacturing Energy Consumption — Regression | `regression_manufacturing.csv` |
-| 2 | `DASCM_2026_Part1_Port_Logistics_Dispatching_EDA.ipynb` | Port Logistics Dispatching — Classification | `classification_logistics.csv` |
+| 1 | `DASCM_2026_Part1_Manufacturing_Energy_Consumption_EDA_FINAL_REVISED.ipynb` | Manufacturing Energy Consumption — Regression | `regression_manufacturing.csv` |
+| 2 | `DASCM_2026_Part1_Port_Logistics_Dispatching_EDA_FINAL_REVISED.ipynb` | Port Logistics Dispatching — Classification | `classification_logistics.csv` |
 | 3 | `DASCM_2026_Part1_Smart_Logistics_Supply_Chain_EDA.ipynb` | Smart Logistics Supply Chain — Logistics Delay | `smart_logistics_dataset.csv` |
 | 4 | `DASCM_2026_Part1_ECommerce_Sales_Customer_Insights_EDA.ipynb` | E-Commerce Sales & Customer Insights — Shipping Fee | `realistic_e_commerce_sales_data.csv` |
 
@@ -104,8 +104,8 @@ MSCM-CO-07_Data-Analytics-in-Supply-Chain-Management_Team_Project/
 ├── smart_logistics_dataset.csv
 ├── realistic_e_commerce_sales_data.csv
 │
-├── DASCM_2026_Part1_Manufacturing_Energy_Consumption_EDA_with_saved_plots.ipynb
-├── DASCM_2026_Part1_Port_Logistics_Dispatching_EDA.ipynb
+├── DASCM_2026_Part1_Manufacturing_Energy_Consumption_EDA_FINAL_REVISED.ipynb
+├── DASCM_2026_Part1_Port_Logistics_Dispatching_EDA_FINAL_REVISED.ipynb
 ├── DASCM_2026_Part1_Smart_Logistics_Supply_Chain_EDA.ipynb
 ├── DASCM_2026_Part1_ECommerce_Sales_Customer_Insights_EDA.ipynb
 │
@@ -468,11 +468,11 @@ mkdir -p executed_notebooks
 Then execute all four explicitly:
 
 ```bash
-jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=1200 --output-dir executed_notebooks DASCM_2026_Part1_Manufacturing_Energy_Consumption_EDA.ipynb
+jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=1200 --output-dir executed_notebooks DASCM_2026_Part1_Manufacturing_Energy_Consumption_EDA_FINAL_REVISED.ipynb
 ```
 
 ```bash
-jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=1200 --output-dir executed_notebooks DASCM_2026_Part1_Port_Logistics_Dispatching_EDA.ipynb
+jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=1200 --output-dir executed_notebooks DASCM_2026_Part1_Port_Logistics_Dispatching_EDA_FINAL_REVISED.ipynb
 ```
 
 ```bash
@@ -496,11 +496,11 @@ New-Item -ItemType Directory -Force executed_notebooks
 Execute each notebook:
 
 ```powershell
-jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=1200 --output-dir executed_notebooks DASCM_2026_Part1_Manufacturing_Energy_Consumption_EDA.ipynb
+jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=1200 --output-dir executed_notebooks DASCM_2026_Part1_Manufacturing_Energy_Consumption_EDA_FINAL_REVISED.ipynb
 ```
 
 ```powershell
-jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=1200 --output-dir executed_notebooks DASCM_2026_Part1_Port_Logistics_Dispatching_EDA.ipynb
+jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=1200 --output-dir executed_notebooks DASCM_2026_Part1_Port_Logistics_Dispatching_EDA_FINAL_REVISED.ipynb
 ```
 
 ```powershell
@@ -526,7 +526,7 @@ executed_notebooks/
 ## 1. Manufacturing Energy Consumption
 
 ```bash
-jupyter notebook DASCM_2026_Part1_Manufacturing_Energy_Consumption_EDA.ipynb
+jupyter notebook DASCM_2026_Part1_Manufacturing_Energy_Consumption_EDA_FINAL_REVISED.ipynb
 ```
 
 Dataset:
@@ -544,7 +544,7 @@ Energy_Consumption_kWh
 ## 2. Port Logistics Dispatching
 
 ```bash
-jupyter notebook DASCM_2026_Part1_Port_Logistics_Dispatching_EDA.ipynb
+jupyter notebook DASCM_2026_Part1_Port_Logistics_Dispatching_EDA_FINAL_REVISED.ipynb
 ```
 
 Dataset:
