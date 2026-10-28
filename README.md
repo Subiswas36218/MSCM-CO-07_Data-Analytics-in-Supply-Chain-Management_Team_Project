@@ -543,9 +543,7 @@ Target:
 Recommended_Dispatch_Action
 ```
 
-```
-
-## 4. E-Commerce Sales & Customer Insights
+## 3. E-Commerce Sales & Customer Insights
 
 ```bash
 jupyter notebook DASCM_2026_Part1_ECommerce_Sales_Customer_Insights_EDA.ipynb
