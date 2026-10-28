@@ -700,7 +700,6 @@ Run the notebook from the repository root. Confirm that the expected CSV is besi
 ```text
 regression_manufacturing.csv
 classification_logistics.csv
-smart_logistics_dataset.csv
 realistic_e_commerce_sales_data.csv
 ```
 
