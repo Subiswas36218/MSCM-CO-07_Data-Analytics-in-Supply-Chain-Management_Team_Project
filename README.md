@@ -64,8 +64,7 @@ Two Manufacturing notebook versions were created during development. The reposit
 |---|---|---|---|
 | 1 | `DASCM_2026_Part1_Manufacturing_Energy_Consumption_EDA_FINAL_REVISED.ipynb` | Manufacturing Energy Consumption — Regression | `regression_manufacturing.csv` |
 | 2 | `DASCM_2026_Part1_Port_Logistics_Dispatching_EDA_FINAL_REVISED.ipynb` | Port Logistics Dispatching — Classification | `classification_logistics.csv` |
-| 3 | `DASCM_2026_Part1_Smart_Logistics_Supply_Chain_EDA.ipynb` | Smart Logistics Supply Chain — Logistics Delay | `smart_logistics_dataset.csv` |
-| 4 | `DASCM_2026_Part1_ECommerce_Sales_Customer_Insights_EDA.ipynb` | E-Commerce Sales & Customer Insights — Shipping Fee | `realistic_e_commerce_sales_data.csv` |
+| 3 | `DASCM_2026_Part1_ECommerce_Sales_Customer_Insights_EDA.ipynb` | E-Commerce Sales & Customer Insights — Shipping Fee | `realistic_e_commerce_sales_data.csv` |
 
 ### Dataset 1 — Manufacturing Energy Consumption
 
@@ -82,11 +81,7 @@ Classification-oriented EDA for the six-class `Recommended_Dispatch_Action` targ
 - `REASSIGN_VEHICLE`
 - `PRIORITY_RECOVERY`
 
-### Dataset 3 — Smart Logistics Supply Chain
-
-EDA for the continuous `Logistics_Delay` target using structured logistics, route, traffic, vehicle and shipment variables. `Shipment_Status` and `Logistics_Delay_Reason` are treated as potential target-leakage variables and are excluded from the primary predictive feature set.
-
-### Dataset 4 — E-Commerce Sales & Customer Insights
+### Dataset 3 — E-Commerce Sales & Customer Insights
 
 EDA for predicting `Shipping Fee` using product, customer, geographic and order characteristics. The notebook explicitly audits `Total Price` against `Unit Price × Quantity` before making the leakage/redundancy decision.
 
@@ -101,12 +96,10 @@ MSCM-CO-07_Data-Analytics-in-Supply-Chain-Management_Team_Project/
 ├── requirements.txt
 ├── regression_manufacturing.csv
 ├── classification_logistics.csv
-├── smart_logistics_dataset.csv
 ├── realistic_e_commerce_sales_data.csv
 │
 ├── DASCM_2026_Part1_Manufacturing_Energy_Consumption_EDA_FINAL_REVISED.ipynb
 ├── DASCM_2026_Part1_Port_Logistics_Dispatching_EDA_FINAL_REVISED.ipynb
-├── DASCM_2026_Part1_Smart_Logistics_Supply_Chain_EDA.ipynb
 ├── DASCM_2026_Part1_ECommerce_Sales_Customer_Insights_EDA.ipynb
 │
 ├── .github/
@@ -476,10 +469,6 @@ jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=1200 --o
 ```
 
 ```bash
-jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=1200 --output-dir executed_notebooks DASCM_2026_Part1_Smart_Logistics_Supply_Chain_EDA.ipynb
-```
-
-```bash
 jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=1200 --output-dir executed_notebooks DASCM_2026_Part1_ECommerce_Sales_Customer_Insights_EDA.ipynb
 ```
 
@@ -501,10 +490,6 @@ jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=1200 --o
 
 ```powershell
 jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=1200 --output-dir executed_notebooks DASCM_2026_Part1_Port_Logistics_Dispatching_EDA_FINAL_REVISED.ipynb
-```
-
-```powershell
-jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=1200 --output-dir executed_notebooks DASCM_2026_Part1_Smart_Logistics_Supply_Chain_EDA.ipynb
 ```
 
 ```powershell
@@ -559,29 +544,6 @@ Target:
 Recommended_Dispatch_Action
 ```
 
-## 3. Smart Logistics Supply Chain
-
-```bash
-jupyter notebook DASCM_2026_Part1_Smart_Logistics_Supply_Chain_EDA.ipynb
-```
-
-Dataset:
-
-```text
-smart_logistics_dataset.csv
-```
-
-Target:
-
-```text
-Logistics_Delay
-```
-
-Important leakage variables excluded from the primary feature set:
-
-```text
-Shipment_Status
-Logistics_Delay_Reason
 ```
 
 ## 4. E-Commerce Sales & Customer Insights
